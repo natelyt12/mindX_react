@@ -1,0 +1,106 @@
+.task_card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  overflow: hidden;
+}
+
+.task_card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Card Header */
+.title_box {
+  padding: 14px 14px 4px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.35;
+}
+
+.edit_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  transition: opacity 0.15s ease;
+}
+
+.edit_btn:hover {
+  opacity: 1;
+}
+
+/* Card Body / Description */
+.description {
+  padding: 4px 14px 8px 14px;
+  font-size: 12px;
+  color: #475569;
+  line-height: 1.45;
+}
+
+/* User Pill Badge */
+.user_badge {
+  padding: 4px 14px 12px 14px;
+}
+
+.user_badge span {
+  background-color: #0013fe;
+  color: #ffffff;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  letter-spacing: 0.2px;
+}
+
+/* Card Footer */
+.task_footer {
+  border-top: 1px solid #f1f3f5;
+  padding: 8px 14px;
+  background-color: #ffffff;
+}
+
+.footer_left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+.attach_item,
+.flag_item,
+.deadline_item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.attach_count {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.deadline_item span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1e293b;
+}

@@ -1,0 +1,26 @@
+.search {
+  width: 280px;
+  height: 42px;
+  padding: 8px 14px 8px 40px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1e293b;
+  outline: none;
+  background-color: #ffffff;
+  background-image: url('/icons/search.svg');
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  background-size: 18px 18px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search::placeholder {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.search:focus {
+  border-color: #0013fe;
+  box-shadow: 0 0 0 3px rgba(0, 19, 254, 0.1);
+}
